@@ -19,6 +19,7 @@ fetch("./texts.json")
     question.innerHTML = questionText;
   });
 
+
 // checks the user typed character and displays accordingly
 const typeController = (e) => {
   const newLetter = e.key;
@@ -126,7 +127,7 @@ const start = () => {
 };
 
 // START Countdown
-startBtn.addEventListener("click", starts);//
+startBtn.addEventListener("click", start);//
 
 // If history exists, show it
 displayHistory();

@@ -17,43 +17,66 @@
                 <h2 class="accordion-header" id="flush-headingOne">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        Accordion Item #1
+                        What are the differences between local storage and session storage?
                     </button>
                 </h2>
                 <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
                     data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
-                        the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                    <div class="accordion-body">sessionStorage is similar to localStorage ; the difference is that while
+                        data in localStorage doesn't expire, data in sessionStorage is cleared when the page session
+                        ends. Whenever a document is loaded in a particular tab in the browser, a unique page session
+                        gets created and assigned to that particular tab.</div>
                 </div>
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        Accordion Item #2
+                        What are the differences between global scope and local scope?
                     </button>
                 </h2>
                 <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
                     data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
-                        the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine
-                        this being filled with some actual content.</div>
+                    <div class="accordion-body">Global variables are useful for values that are relatively constant, or
+                        that many functions in the script must access, such as a session id. A local variable, however,
+                        has a limited scope: it exists only within the block that it is declared in. Once that block
+                        ends, the variable is destroyed and its values lost .</div>
                 </div>
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingThree">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                        Accordion Item #3
+                        How does event loop work in javascript?
                     </button>
                 </h2>
                 <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
                     data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
-                        the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
-                        exciting happening here in terms of content, but just filling up the space to make it look, at
-                        least at first glance, a bit more representative of how this would look in a real-world
-                        application.</div>
+                    <div class="accordion-body">The Event Loop has one simple job — to monitor the Call Stack and the
+                        Callback Queue. If the Call Stack is empty, the Event Loop will take the first event from the
+                        queue and will push it to the Call Stack, which effectively runs it. Such an iteration is called
+                        a tick in the Event Loop.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        How many ways may javascript be undefined?
+                    </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <p>1.A variable isn't initiallized.</p>
+                        <p>2.Function with no return.</p>
+                        <p>3.Parameters of any function don't pass.</p>
+                        <p>4.If the right side part of return is empty.</p>
+                        <p>5.property that doesn't exists in an object.</p>
+                        <p>6.Accessing array elements outside of the index range.</p>
+                        <p>7.Deleting an element from an array.</p>
+                        <p>8.Set a value directly.</p>
+                    </div>
                 </div>
             </div>
         </div>
